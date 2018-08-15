@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/cardView"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    app:cardBackgroundColor="#dad9d9"
     android:layout_margin="5dp">
 
     <RelativeLayout
@@ -11,8 +13,8 @@
         android:layout_height="wrap_content">
 
         <ImageView
-            android:id="@+id/image_view"
-            android:layout_width="120dp"
+            android:id="@+id/image_view_movie"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:adjustViewBounds="true"
             tools:src="@drawable/img" />
@@ -22,7 +24,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
-            android:layout_toRightOf="@id/image_view"
+            android:layout_toRightOf="@id/image_view_movie"
             android:ellipsize="end"
             android:maxLines="1"
             android:textSize="20sp"
@@ -35,7 +37,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/text_view_movie"
             android:layout_marginLeft="5dp"
-            android:layout_toRightOf="@id/image_view"
+            android:layout_toRightOf="@id/image_view_movie"
             android:textSize="10sp"
             tools:text="05-11-2000" />
 
@@ -44,8 +46,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/text_view_movie_date"
+            android:layout_marginTop="10dp"
             android:layout_marginLeft="5dp"
-            android:layout_toRightOf="@id/image_view"
+            android:layout_toRightOf="@id/image_view_movie"
             android:ellipsize="end"
             android:maxLines="4"
             android:textSize="12sp"
@@ -60,7 +63,7 @@
             android:layout_marginBottom="8dp"
             android:layout_marginLeft="8dp"
             android:text="Read More..."
-            android:textColor="#ca2525"
+            android:textColor="#043869"
             android:textStyle="bold" />
     </RelativeLayout>
 </android.support.v7.widget.CardView>
